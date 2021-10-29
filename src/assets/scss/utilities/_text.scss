@@ -45,6 +45,11 @@
   @include text-emphasis-variant(".text-#{$color}", $value);
 }
 
+@each $color, $value in $grays {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+
 .text-body { color: $body-color !important; }
 .text-muted { color: $text-muted !important; }
 
