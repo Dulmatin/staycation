@@ -7,7 +7,7 @@ export default class LandingPage extends Component {
         return (
             <>
                 <Header {...this.props}>
-
+                    
                 </Header>   
             </>
         )
