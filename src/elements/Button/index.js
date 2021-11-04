@@ -38,18 +38,18 @@ export default function Button(props) {
           className={className.join("")}
           style={props.style}
           target={props.target === "_blank" ? "_blank" : undefined }
-          rel={props.target === "_blank" ? "noreferrer noopener " : undefined }
+          rel={props.target === "_blank" ? "noopener noreferrer" : undefined }
         >
           {props.children}
         </a>
-      );
+      )
     } else {
       return (
         <Link
           to={props.href}
           className={className.join("")}
           style={props.style}
-          onclick={onClick}
+          onClick={onClick}
         >
           {props.children}
         </Link>
@@ -61,7 +61,7 @@ export default function Button(props) {
     <button
       className={className.join("")}
       style={props.style}
-      onclick={onClick}
+      onClick={onClick}
     >
       {props.children}
     </button>
@@ -70,10 +70,11 @@ export default function Button(props) {
 
 Button.propTypes = {
   type: propTypes.oneOf(["button", "link"]),
-  onclick: propTypes.func,
+  onClick: propTypes.func,
   href: propTypes.string,
   target: propTypes.string,
   className: propTypes.string,
+  isPrimary: propTypes.bool,
   isExternal: propTypes.bool,
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
