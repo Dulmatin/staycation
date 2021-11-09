@@ -135,7 +135,7 @@ section {
         }
 
         span {
-            font-size: 00.875rem;
+            font-size: 0.875rem;
         }
     }
 
@@ -145,7 +145,7 @@ section {
         cursor: pointer;
         height: 100%;
         border-radius: 15px;
-        &::after {
+        &:after {
             position: absolute;
             content: "";
             top: 0; right: 0; bottom: 0; left:0; transform: scale(1.1);
@@ -160,8 +160,6 @@ section {
             padding: 20px;
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0; transform: scale(1.1); transition: .25s transform ease-in-out; 
-
-
         }
 
         .meta-wrapper {
