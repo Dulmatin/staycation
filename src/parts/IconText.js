@@ -6,7 +6,7 @@ export default function IconText() {
     return (
         <div>
             <Button className="brand-text-icon" href="" type="link">
-                Stay<span className="text-gray-900">cation.</span>
+                Bakher<span className="text-gray-900">Travel.</span>
             </Button>
         </div>
     )
