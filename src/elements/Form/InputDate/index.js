@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 import { DateRange } from "react-date-range";
+
 
 import "./index.scss";
 import "react-date-range/dist/style.css";
@@ -89,6 +90,8 @@ Date.propTypes = {
   onChange: propTypes.func,
   placeholder: propTypes.string,
   outerClassName: propTypes.string,
+  // onClick : propTypes.string
+
 };
 
 
