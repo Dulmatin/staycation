@@ -41,7 +41,7 @@ export default function Date(props) {
   };
 
   const check = (focus) => {
-    focus.indexOf[1] < 0 && setIsShowed(false);
+    focus.indexOf(1) < 0 && setIsShowed(false);
   };
 
   const displayDate = `${value.startDate ? formatDate(value.startDate) : ""}${
